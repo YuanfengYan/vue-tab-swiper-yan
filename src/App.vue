@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <tab-swiper-warp :loop="true" >
-     <!-- <template slot="tab">
+     <template slot="tab">
       <div class="top">
          <swiper-tab class="tab">
           <span>1</span>
@@ -13,7 +13,7 @@
           <span>3</span>
        </swiper-tab>
       </div>
-     </template> -->
+     </template>
      <template slot="content">
         <swiper-item>
           <div style="background-color:red; height:200px">1</div>
