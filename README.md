@@ -27,7 +27,7 @@ Vue.use(vueSwiper)
 ##  Props
  
 | Prop        | Data Type   |  Default  | Description |
-| --------   | -----:  | :----:  |
+| --------   | -----:  | :----:  | :----:  |
 | loop      | Boolean   |   false     | 是否可以无限滑动 |
 
 
