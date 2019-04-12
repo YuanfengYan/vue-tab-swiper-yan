@@ -55,12 +55,11 @@ export default {
         .forEach((item, index) => {
           item.indexs = index;
         });
-      this.$refs.tabwarp.addEventListener(
+      this.$refs.tabwarp.querySelectorAll(".swiperTab").forEach((target,index)=>{
+        target.addEventListener(
         "click",
         e => {
-          let target = e.target;
-          if (target.classList.contains("swiperTab")) {
-            let distance = 0;
+           let distance = 0;
             this.addActiveTab(target.indexs)
             if (this.loop) {
               distance = target.indexs * this.pageWidth;
@@ -69,13 +68,10 @@ export default {
             }
             this.transwarpDom.style.transform = `translate3d(${-distance}px,0px,0px)`;
             this.transwarpDom.style.transition = "transform .3s";
-          }
-          
-          e.preventDefault();
-          e.stopPropagation();
         },
-        true
+        false
       );
+      })
     },
     touchstart(e) {
       this.originalPos = e.touches[0].pageX;
