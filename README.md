@@ -24,8 +24,8 @@ Vue.use(vueSwiper)
      </swiper-item>
    </tab-swiper-warp>
 ```
-##Props
-
+##  Props
+ 
 | Prop        | Data Type   |  Default  | Description |
 | --------   | -----:  | :----:  |
 | loop      | Boolean   |   false     | 是否可以无限滑动 |
